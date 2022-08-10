@@ -16,4 +16,7 @@
     "url": "https://github.com/cgaudette-enterprise-cloud-testing/package-test2/issues"
   },
   "homepage": "https://github.com/cgaudette-enterprise-cloud-testing/package-test2#readme"
-}
+  },
+"publishConfig": {
+   "@YOUR-USERNAME:registry": "https://npm.pkg.github.com"
+ }
