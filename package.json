@@ -15,8 +15,8 @@
   "bugs": {
     "url": "https://github.com/cgaudette-enterprise-cloud-testing/package-test2/issues"
   },
-  "homepage": "https://github.com/cgaudette-enterprise-cloud-testing/package-test2#readme"
-  },
-"publishConfig": {
+  "homepage": "https://github.com/cgaudette-enterprise-cloud-testing/package-test2#readme",  
+  "publishConfig": {
    "@cgaudette:registry": "https://npm.pkg.github.com"
  }
+}
