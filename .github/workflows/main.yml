@@ -1,0 +1,29 @@
+name: ...
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  packages: read
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    name: Testing
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.20'
+
+      - name: Check the code
+        uses: actions/checkout@v3
+
+      - name: Install CLI 
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm install @cgaudette-enterprise-cloud-testing/package-test2@1.0.0
