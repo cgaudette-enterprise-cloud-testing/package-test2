@@ -27,3 +27,9 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install @cgaudette-enterprise-cloud-testing/package-test2@1.0.0 --registry=https://npm.pkg.github.com/:_authToken=${{ env.NPM_TOKEN }}
+      
+      - name: Install dotenv 
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm i dotenv
